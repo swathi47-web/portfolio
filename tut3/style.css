@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquard+24+Charted&display=swap')
+.my-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    max-width:0%;
+    color:#660568;  
+}
+.my-container h1 {
+    color:#b7d443;
+    font-size: medium;
+    text-overflow: inherit
+    ..;
+     
+}
+
+.my-container p {
+    color:#b3b0b1;
+}
+
+body{
+    background-color:#660568;
+    border-radius:1px solid rgb(38, 10, 10);
+    margin:20px;
+    padding:20px;
+}
+.my-container img{
+    border-radius: 50%;
+    height:250px;
+    filter:grayscale(100%);
+}

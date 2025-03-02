@@ -1,0 +1,367 @@
+
+        /* Customize the scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px; /* Width of the scrollbar */
+        }
+
+        /* Track (the background of the scrollbar) */
+        ::-webkit-scrollbar-track {
+            background: black; /* Black track */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        /* Handle (the draggable part of the scrollbar) */
+        ::-webkit-scrollbar-thumb {
+            background: white; /* White scrollbar */
+            border-radius: 10px; /* Rounded corners */
+            border: 2px solid black; /* Add a border to make it stand out */
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ccc; /* Light gray on hover */
+        }
+
+        /* Rest of your existing CSS */
+        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Headland+One&family=Oleo+Script:wght@400;700&family=Racing+Sans+One&display=swap');
+        body {
+            margin: 0%;
+            background-color: black;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: black;
+            padding: 10px 0;
+        }
+        .navbar-left {
+            padding-left: 30px;
+        }
+        .navbar-right {
+            padding-right: 90px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            padding-top: 30px;
+        }
+        .navbar-right .a-element {
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .navbar-right .a-element:hover {
+            color: aquamarine;
+            text-decoration: none;
+        }
+        .logo-image {
+            height: 130px;
+        }
+        .pic {
+            height: 420px;
+            padding-right: 10px;
+            border-radius: 5%;
+            filter: grayscale(100%);
+        }
+        .pic:hover {
+            filter: grayscale(0%);
+        }
+        .Home {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 60vh;
+            background-color: black;
+        }
+        .Home-left {
+            width: 50vw;
+            color: white;
+            text-align: right;
+            size: 200px;
+        }
+        .Home-right {
+            width: 50vw;
+            padding-left: 20px;
+        }
+        .Home-h1 {
+            background: linear-gradient(to right, rgba(0, 168, 253, 1), #fff 35%, #e00a95);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s linear infinite;
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 75%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 70%; }
+        }
+        .Home-p {
+            font-family: "Encode Sans Expanded", sans-serif;
+            color: #fff;
+        }
+        .Home-p:hover {
+            color: aquamarine;
+        }
+        .Skills {
+            color: white;
+            padding: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .headingskills {
+            font-size: 30px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+        .skill-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .skil-card {
+            margin: 20px;
+        }
+        .skillh1 {
+            font-family: "Headland One", serif;
+        }
+        .skillh2 {
+            font-family: "Encode Sans Expanded", sans-serif;
+            color: #fff;
+        }
+        .skillh2:hover {
+            color: aquamarine;
+        }
+        .pic-2 {
+            height: 150px;
+        }
+        .pic-3 {
+            height: 150px;
+        }
+        .pic-1 {
+            height: 150px;
+        }
+        .iitpic {
+            height: 400px;
+            margin-left: 450px;
+            border: #fff 2px solid;
+        }
+        .contact {
+            color: #fff;
+            text-align: center;
+        }
+        .contact-info {
+            font-family: "Encode Sans Expanded", sans-serif;
+            color: #fff;
+        }
+        .contact-info:hover {
+            color: aquamarine;
+        }
+        .linkpic {
+            height: 34px;
+            padding-top: 3px;
+            filter: grayscale(100%);
+        }
+        .linkpic:hover {
+            filter: grayscale(0%);
+        }
+        .fb {
+            height: 36px;
+            filter: grayscale(100%);
+        }
+        .fb:hover {
+            filter: grayscale(0%);
+        }
+        .paraabout {
+            color: white;
+            text-align: center;
+        }
+        .paraabout:hover {
+            color: aquamarine;
+        }
+        .about {
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        .line {
+            color: black;
+        }
+        .certificate {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .certificate:hover {
+            color: aquamarine;
+        }
+        .certificate1 {
+            color: #fff;
+            padding-left: 1000px;
+            text-decoration: underline;
+        }
+        .certificate1:hover {
+            color: aquamarine;
+        }
+        .intern {
+            text-align: center;
+            color: #fff;
+            padding-top: 50px;
+        }
+        .sm {
+            color: #fff;
+            text-align: center;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .social-icon {
+            padding-bottom: 40px;
+        }
+        .contact-form-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        .social-icon {
+            text-align: center;
+            padding-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .contact-form-container {
+                max-width: 90%;
+                padding: 15px;
+                margin-top: 20px;
+            }
+            .contact-form input,
+            .contact-form textarea {
+                padding: 10px;
+            }
+            .contact-form button {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .social-icon {
+                padding-bottom: 20px;
+            }
+            .fa-brands {
+                font-size: 30px;
+                margin: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .contact-form-container {
+                max-width: 95%;
+                padding: 10px;
+            }
+            .contact-form input,
+            .contact-form textarea {
+                padding: 8px;
+            }
+            .contact-form button {
+                padding: 8px;
+                font-size: 14px;
+            }
+            .social-icon i {
+                font-size: 28px;
+            }
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .Home {
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+            }
+            .Home-left, .Home-right {
+                width: 100%;
+                text-align: center;
+            }
+            .logo-image {
+                height: 150px;
+            }
+            .iitpic {
+                height: auto;
+                width: 90%;
+                margin-left: 0;
+            }
+            .pic {
+                height: 250px;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 992px) {
+            .navbar {
+                flex-direction: row;
+            }
+            .Home {
+                flex-direction: row;
+                height: auto;
+            }
+            .Home-left, .Home-right {
+                width: 50vw;
+            }
+            .logo-image {
+                height: 200px;
+            }
+            .iitpic {
+                height: 400px;
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media (min-width: 993px) and (max-width: 1200px) {
+            .navbar {
+                padding: 10px 50px;
+            }
+            .Home-h1…

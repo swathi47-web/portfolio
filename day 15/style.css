@@ -1,0 +1,46 @@
+
+body {
+    background-color: blueviolet;
+    padding: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+
+    
+}
+.side {
+    text-align: center;
+    color: aliceblue;
+}
+.box {
+    width: 300px; height: 150px; border: 100px;
+    border-style: solid;
+    border-color: aliceblue;
+    background-color: aliceblue;  
+    margin:50px;
+    border-radius: 20px;
+   
+}  
+
+.head {
+    text-align: baseline;
+}
+.swa {
+    width: 300px; height: 400px; border:100px,solid,aliceblue;
+    background-color: aliceblue;
+    margin: 50px;
+    border-radius: 20px;
+}
+ol.set {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+.bt {
+    width: 20vh;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+}

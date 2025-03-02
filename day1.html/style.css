@@ -1,0 +1,31 @@
+b ody{
+    margin: 60px;
+}
+.box{
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    text-align:center;
+    m argin: 50px;
+    m argin: 100px;
+    border-end-end-radius: 50px;
+    p adding-inline: 50px;
+    height: 200px;
+    width: 200px;
+}
+.b oxx{
+    margin: 200px;
+}
+.heading {
+    color:blue;
+}
+.img {
+    padding: 50px;
+    text-align: center;
+}
+.content {
+    border-color:rgb(18, 20, 27);
+    border-width: 8px;
+    border-style: solid;
+    text-align: center;
+}

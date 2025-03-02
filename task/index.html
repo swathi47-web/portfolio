@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Pasta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color:black;
+            background-image: url("https://wallpapercave.com/wp/wp4325889.jpg");
+            background-size: cover;
+        }
+        .nav-element {
+            color:white;
+            text-decoration: none;
+            margin:  15px;
+            font-size: 18px;
+            text-align:center;
+        }
+        .navbar{
+            text-align: right;
+            background-color: black;
+        }
+        .nav-element i {
+            margin-right: 5px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            
+            color: black;
+        }
+        
+        header img {
+            max-width: 50%;
+            height: 40vh;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .ingredients ul,
+        .instructions ol {
+            padding-left: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .img{ 
+            display: flex;
+            flex-direction: row;
+            height: 470px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class=" navbar">
+        <a class="nav-element" href="#Home"></i> Home</a>
+        <a class="nav-element" href="#ingredients"></i> Ingredients</a>
+        <a class="nav-element" href="#process">Process</a>
+    </div>
+<header>
+    <div id="Home" >
+        <h1>Delicious Pasta</h1>
+    <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2022/11/red-sauce-pasta-1.jpg" alt="Delicious Pasta" />
+    </div>
+</header>
+<section class="ingredients" id="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+        <li>200g pasta</li>
+        <li>100g cherry tomatoes</li>
+        <li>50g parmesan cheese</li>
+        <li>2 cloves of garlic</li>
+        <li>Olive oil</li>
+        <li>Salt and pepper</li>
+    </ul>
+</section>
+<div class="text-center"><button class="btn btn-success p-2" id="startCooking">Start Cooking</button></div>
+
+<section class="cooking-info">
+    <h2>Cooking Time & Difficulty</h2>
+    <table>
+        <tr>
+            <th>Cooking Time</th>
+            <td>20 minutes</td>
+        </tr>
+        <tr>
+            <th>Preparation Time</th>
+            <td>10 minutes</td>
+        </tr>
+        <tr>
+            <th>Difficulty</th>
+            <td>Easy</td>
+        </tr>
+    </table>
+</section>
+
+<div class="img">
+    <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/6F320FC7-CBD7-419D-B790-24DA25E975F9/Derivates/9774C36E-8478-4BE3-A8CD-FF02AC5B9BCB.jpg">
+    <img src="https://foodhub.scene7.com/is/image/woolworthsltdprod/Easy-chicken-and-bacon-pasta:Desktop-1300x658">
+</div>
+
+<div id="process">
+    <section class="instructions" id="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Boil water in a large pot.</li>
+            <li>Add the pasta and cook according to the package instructions.</li>
+            <li>In a pan, heat olive oil and sauté chopped garlic.</li>
+            <li>Add cherry tomatoes and cook until soft.</li>
+            <li>Drain the pasta and mix with the tomato mixture.</li>
+            <li>Serve with grated parmesan, salt, and pepper.</li>
+        </ol>
+    </section>
+</div>
+
+<script>
+    document.getElementById('startCooking').onclick = function() {
+        document.getElementById('instructions').scrollIntoView({ behavior: 'auto' });
+    };
+</script>
+
+</body>
+</html>

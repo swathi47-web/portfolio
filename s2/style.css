@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    text-align: center;
+    padding-top: 150px;
+    padding: 50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:0;
+}
+.name{
+    font-family: "Allura", cursive;
+    font-size: 100px;
+    word-spacing:10px;
+    background: linear-gradient(to right,#54bee4,
+                    #ef72e5,hsl(196, 73%, 61%)); 
+        background-clip: text;            
+        display: inline; 
+        -webkit-text-fill-color:transparent; 
+        -webkit-background-clip: text;
+        text-align: center;
+       color: transparent;
+       animation: animated 5s linear infinite;
+       filter: drop-shadow(1px 1px 20px pink);   
+}
+@keyframes animated{
+    to {background-position-x: 161px;}
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        .font {
+            color: #063970;
+            padding-left: 3cm;
+            font-weight: bold;
+        }
+        .img {
+            height: 400px;
+            cursor: pointer;
+        }
+        .font2 {
+            padding-left: 1cm;
+            color: gray;
+        }
+        .img2, .img3, .img4, .img5 {
+            border-radius: 7%;
+            height: 190px;
+            cursor: pointer;
+        }
+        #iframeContainer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+        #iframe {
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            display: block;
+            margin-top: 5%;
+        }
+        #backButton {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="sectionTop">
+        <div>
+            <img class="img" src="c:\Users\HP\Pictures\Saved Pictures\html.png" onclick="openIframe('your-image-url-or-html-file.html')"><br>
+            <h1 class="font">My Projects</h1>
+            <h3 class="font2">These are a few of my Static Website projects that I have<br>developed using HTML, CSS, and Bootstrap</h3>
+        </div>
+        <div>
+            <img class="img2" src="c:\Users\HP\Pictures\Saved Pictures\2.jpeg" onclick="openIframe('your-image-url-or-html-file.html')">
+            <img class="img3" src="C:\Users\HP\Pictures\Saved Pictures\di.jpg" onclick="openIframe('your-image-url-or-html-file.html')">
+        </div>
+        <div>
+            <img class="img4" src="c:\Users\HP\Pictures\Saved Pictures\food.jpeg" onclick="openIframe('your-image-url-or-html-file.html')">
+            <img class="img5" src="c:\Users\HP\Pictures\Saved Pictures\4.jpeg" onclick="openIframe('your-image-url-or-html-file.html')">
+        </div>
+    </div>
+
+    <div id="iframeContainer">
+        <button id="backButton" onclick="closeIframe()">Back</button>
+        <iframe id="iframe" src="" frameborder="0"></iframe>
+    </div>
+
+    <script>
+        function openIframe(src) {
+            document.getElementById('iframe').src = src;
+            document.getElementById('iframeContainer').style.display = 'block';
+            document.getElementById('backButton').style.display = 'block';
+        }
+
+        function closeIframe() {
+            document.getElementById('iframeContainer').style.display = 'none';
+            document.getElementById('backButton').style.display = 'none';
+            document.getElementById('iframe').src = ''; 
+        }
+    </script>
+</body>
+</html>
